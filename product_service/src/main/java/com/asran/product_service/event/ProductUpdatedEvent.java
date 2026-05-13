@@ -1,0 +1,17 @@
+package com.asran.product_service.event;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class ProductUpdatedEvent {
+
+    private String oldSkuCode;
+
+    private String newSkuCode;
+
+    private Integer quantity;
+}
