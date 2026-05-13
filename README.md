@@ -53,4 +53,10 @@ A baseline multi-container topology is provided in `docker-compose.yml` with:
 - Product, Order, Inventory, User, Notification services
 - React frontend
 
+Before starting, create `.env` from `.env.example` and set strong local secrets/passwords:
+
+```bash
+cp .env.example .env
+```
+
 > Service container images are referenced by name and can be replaced with local builds as each service implementation is added.
